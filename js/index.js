@@ -89,3 +89,17 @@ var contador = setInterval(function(){
 		document.getElementById("demo").innerHTML = "expired"
 	}
 }, 1000)
+
+//project 5: login form
+
+function login(form){
+	if (form.user.value === "pedro") {
+		if (form.passw.value === "123") {
+			location="principal.html"
+		} else {
+			alert("error de password")
+		}
+	} else {
+		alert("error de usuario")
+	}
+}
