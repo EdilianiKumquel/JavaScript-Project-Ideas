@@ -91,15 +91,27 @@ var contador = setInterval(function(){
 }, 1000)
 
 //project 5: login form
+let correct = document.getElementById("correct");
+class Usuario {
+	constructor(name,clave){
+		this.name = name
+		this.clave = clave
+	}
+}
+// const usuario = /^([a-z])/i
+// const clave = //
+let usuario1 = new Usuario();
+usuario1.name = "ediliani"
+usuario1.clave = "123"
 
 function login(form){
-	if (form.user.value === "pedro") {
-		if (form.passw.value === "123") {
-			location="principal.html"
+	if (form.user.value && form.passw.value) {
+		if (form.user.value === usuario1.name && form.passw.value === usuario1.clave) {
+			correct.innerHTML = `<p>Usuario correcto</p>`;
 		} else {
-			alert("error de password")
+			correct.innerHTML = `<p>Usuario incorrecto</p>`;
 		}
 	} else {
-		alert("error de usuario")
+		correct.innerHTML = `<p>El usuario o la contraseña no fue suministrada</p>`;
 	}
 }

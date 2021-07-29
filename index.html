@@ -60,14 +60,21 @@
 		<p id="demo"></p>
 	</div>
 	<div id="project5" class="project">
-		<h1>project 5: Login Form</h1>
-		<form action="">
-			<label>Usuario</label>
-			<input type="text" name="user">
-			<label>Contraseña</label>
-			<input type="password" name="passw">
-			<input type="button" name="" value="Ingresar" onclick="login(this.form)">
-		</form>
+		<h1>Project 5: Login Form</h1>
+		<div id="wrapper">
+			<div class="logo"><span>EK</span></div>
+			<h2>Sign In</h2>
+			<div id="correct"></div>
+			<form action="" method="POST">
+				<input type="text" name="user" placeholder="USERNAME">
+				<input type="password" name="passw" placeholder="PASSWORD">
+				<input type="button" name="input" value="LOGIN" onclick="login(this.form)">
+			</form>
+			<div class="remember">
+				<input type="checkbox" name="remember">Remember me
+			</div>
+			<a href="#"> Forgot your password?</a>
+		</div>
 	</div>
 	<div id="" class="project">
 		<h1>project 6: to-do list</h1>

@@ -84,3 +84,99 @@
 #project3 #valor-anterior {
 	font-size: 2em;
 }
+
+/*-------PROJECT 4------*/
+
+
+/*-------PROJECT 5-----*/
+#project5 {
+	background: linear-gradient(180deg, #3ad093, #1a5597) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#project5 h1 {
+	text-align: center;
+}
+
+#wrapper {
+	width: 300px;
+	height: 370px;
+	position:relative;
+	text-align: center;
+	border: 3px solid rgba(225,225,225,0.5);
+	border-left: none;
+	border-right: none;
+	margin: 10% auto 0 auto;
+}
+
+#wrapper .logo {
+	width: 90px;
+	height: 90px;
+	color: rgba(255, 255, 255, 0.5);
+	background-color: #1a5597;
+	position: relative;
+	top: -50px;
+	left: 36%;
+	border-radius: 90px;
+	border:2px solid rgba(225,225,225,0.5);
+}
+
+#wrapper .logo span {
+	color: rgba(225,225,225,0.5);
+	font-size: 30px;
+	position: absolute;
+	left: 25px;
+	top: 28px;
+}
+
+#wrapper h2 {
+	position:relative; 
+	font-size: 30px;
+	top: -20px;
+	font-weight: bold;
+}
+
+#wrapper form input {
+	display: block;
+	position: relative;
+	background: rgba(225,225,225,0.5);
+	border:none;
+	border-radius: 5px;
+	height: 30px;
+	width: 100%;
+	margin: 15px 0;
+	color: #000;
+	outline: none;
+}
+
+#wrapper form input[type="button"] {
+	border-radius: 20px;
+	font-weight: bold;
+	background: #1a5597;
+	color: rgba(225, 225, 225, 0.5);
+	cursor: pointer;
+}
+
+#wrapper form input[type="button"]:hover {
+	background-color: #3ad093;
+	color: rgba(0,0,0,0.5);
+}
+
+#wrapper .remember {
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+
+#wrapper a {
+	margin-top: 10px;
+	float: right;
+	display: inline;
+	text-decoration: none;
+	color: #000;
+}
