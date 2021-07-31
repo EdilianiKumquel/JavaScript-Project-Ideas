@@ -69,7 +69,7 @@ botonesOperadores.forEach(boton => {
 
 // PROJECT 4: COUNTDOWN
 //set the date we are counting down to 
-var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+var countDownDate = new Date("Jan 6, 2022 15:37:25").getTime();
 // Update the count down every 1 second
 var contador = setInterval(function(){
 	//get todays date and time 
@@ -89,6 +89,7 @@ var contador = setInterval(function(){
 		document.getElementById("demo").innerHTML = "expired"
 	}
 }, 1000)
+
 
 //project 5: login form
 let correct = document.getElementById("correct");
@@ -114,4 +115,29 @@ function login(form){
 	} else {
 		correct.innerHTML = `<p>El usuario o la contraseña no fue suministrada</p>`;
 	}
+}
+
+// --------PROJECT 6: TO DO LIST -------
+
+let addIn = document.getElementById("add-in")
+let addEl = document.getElementById("add-el")
+let tarea = document.getElementById("tarea")
+
+function add(){
+	if (addIn.value) {
+		addEl.innerHTML += `<li id="tarea">
+								<input type="checkbox" onclick="ready()">${addIn.value}<button onclick="deleteT()">x</button>
+							</li>`
+		addIn.value = ""
+	} else {
+		console.log("NO ha introducido nada")
+	}
+}
+
+function deleteT(){
+	addEl.innerHTML = ""
+}
+
+function ready(){
+	console.log(tarea)
 }
