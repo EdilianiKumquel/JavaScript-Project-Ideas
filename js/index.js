@@ -119,25 +119,48 @@ function login(form){
 
 // --------PROJECT 6: TO DO LIST -------
 
-let addIn = document.getElementById("add-in")
-let addEl = document.getElementById("add-el")
-let tarea = document.getElementById("tarea")
+const input = document.querySelector("#addItem")
+const addBtn = document.querySelector(".btn-add")
+const ul = document.querySelector("#tareas")
+const empty = document.querySelector(".empty")
 
-function add(){
-	if (addIn.value) {
-		addEl.innerHTML += `<li id="tarea">
-								<input type="checkbox" onclick="ready()">${addIn.value}<button onclick="deleteT()">x</button>
-							</li>`
-		addIn.value = ""
+addBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+	const text = input.value;
+
+	if (text){
+
+		const li = document.createElement("li")
+		const p = document.createElement("p")
+		p.textContent = text;
+
+		li.appendChild(p);
+		li.appendChild(addDeleteBtn())
+		ul.appendChild(li);
+
+		input.value = "";
+		empty.style.display = "none"
 	} else {
-		console.log("NO ha introducido nada")
+		// empty.innerHTML += `<p>No redactó ninguna tarea</p>`
 	}
-}
+	
+})
 
-function deleteT(){
-	addEl.innerHTML = ""
-}
+function addDeleteBtn(){
+	const deleteBtn = document.createElement("button")
 
-function ready(){
-	console.log(tarea)
+	deleteBtn.textContent = "x";
+	deleteBtn.className = "btn-delete"
+
+	deleteBtn.addEventListener("click", (e) => {
+		const item = e.target.parentElement
+		ul.removeChild(item)
+
+		const items = document.querySelectorAll("li")
+		if (items.length === 0) {
+			empty.style.display = "block"
+		}
+	})
+
+	return deleteBtn
 }

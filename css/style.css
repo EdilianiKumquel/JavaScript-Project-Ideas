@@ -180,3 +180,22 @@
 	text-decoration: none;
 	color: #000;
 }
+
+/*---------PROJECT 6----------------*/
+
+#project6 .container6 {
+	width: 300px;
+	height: 70%;
+	background-color: pink;
+	position: relative;
+	text-align: center;
+	align-content: center;
+	margin: 2% auto 0 auto;
+}
+
+#project6 .container6 .header6 {
+	height: 40%;
+	background-color: red;
+	color: 
+}
+
