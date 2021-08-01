@@ -164,3 +164,23 @@ function addDeleteBtn(){
 
 	return deleteBtn
 }
+
+//------PTOJECT 8----------
+
+let mouseover = document.getElementById("mouseover");
+
+mouseover.addEventListener("mouseenter", function(event){
+	event.target.style.color = "purple";
+
+	setTimeout(function(){
+		event.target.style.color = "";
+	}, 500);
+}, false);
+
+mouseover.addEventListener("mouseover", function(event){
+	event.target.style.color = "orange";
+
+	setTimeout(function(){
+		event.target.style.color="";
+	}, 500);
+}, false);

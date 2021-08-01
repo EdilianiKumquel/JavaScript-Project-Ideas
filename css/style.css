@@ -182,20 +182,42 @@
 }
 
 /*---------PROJECT 6----------------*/
-
-#project6 .container6 {
+.container6 {
 	width: 300px;
 	height: 70%;
-	background-color: pink;
+	border-radius: 5px;
+	background-color: #bb8a52;
 	position: relative;
 	text-align: center;
 	align-content: center;
 	margin: 2% auto 0 auto;
 }
 
-#project6 .container6 .header6 {
+.header6 {
 	height: 40%;
-	background-color: red;
-	color: 
+	background: url("../img/img2.jpg") no-repeat center center;
+	background-size: cover;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
+
+.search {
+	padding-top: 10px;
+}
+
+#addItem {
+	width: 70%;
+
+}
+
+.btn-add {
+	background-color: #ffba00;
+	border: none;
+	border-radius: 100px;
+	width: 42px;
+	height: 30px;
+	font-size: 20px;
+}
+
+
 
